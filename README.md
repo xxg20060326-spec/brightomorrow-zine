@@ -6,6 +6,7 @@
 
 - 在 `content/articles.json` 修改文章标题、栏目、作者、日期、颜色与版面尺寸。
 - 在 `content/articles/01.md` 至 `06.md` 填写对应正文。
+- 每篇文章会通过 `article.html?id=文章编号` 打开独立的 Wiki 式档案页。
 - 保存到 `main` 分支后，GitHub Pages 会重新发布网站。
 
 正文支持：
@@ -19,8 +20,12 @@
 ## 修改网页设计或功能
 
 - `index.html`：页面结构
-- `styles.css`：全部视觉样式与手机适配
-- `app.js`：文章读取、Markdown 渲染与页面交互
+- `styles.css`：主页视觉样式与手机适配
+- `app.js`：主页文章卡片
+- `article.html`：所有文章共用的内页骨架
+- `article.css`：Wiki/Fandom 式文章内页设计
+- `article.js`：读取文章、生成目录、资料卡与翻页导航
+- `markdown.js`：主页和文章页共用的 Markdown 转换器
 
 ## 添加协作者
 
