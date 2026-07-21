@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ece7d8" />
+    <meta name="description" content="BRIGHTomorrow 文章档案" />
+    <title>文章档案 — BRIGHTomorrow</title>
+    <link rel="stylesheet" href="article.css" />
+  </head>
+  <body>
+    <div class="archive-noise" aria-hidden="true"></div>
+
+    <header class="archive-header">
+      <a class="archive-wordmark" href="index.html" aria-label="返回 BRIGHTomorrow 首页">
+        <span>BRIGHT</span>omorrow
+      </a>
+      <p>PUBLICATION DATABASE / VOL.01</p>
+      <a class="index-button" href="index.html#articles">文章索引 <span>↙</span></a>
+    </header>
+
+    <div class="system-strip" aria-label="档案状态">
+      <span>BRIGHTomorrow EDITORIAL SYSTEM</span>
+      <span id="system-record">RECORD / --</span>
+      <span>PUBLIC ACCESS</span>
+    </div>
+
+    <main class="archive-layout" id="archive-layout" aria-live="polite">
+      <aside class="archive-sidebar" aria-label="本期导航">
+        <section class="side-module issue-module">
+          <p class="module-label">ISSUE / 本期</p>
+          <div class="issue-number">01</div>
+          <p>VOL.01 / 2026</p>
+        </section>
+
+        <nav class="side-module" aria-labelledby="issue-nav-title">
+          <h2 id="issue-nav-title">本期文章</h2>
+          <ol class="issue-navigation" id="issue-navigation"></ol>
+        </nav>
+
+        <nav class="side-module toc-module" aria-labelledby="toc-title">
+          <h2 id="toc-title">页面目录</h2>
+          <ol id="article-toc"></ol>
+        </nav>
+      </aside>
+
+      <article class="archive-article">
+        <nav class="breadcrumbs" aria-label="面包屑导航">
+          <a href="index.html">首页</a><span>/</span>
+          <a href="index.html#articles">VOL.01</a><span>/</span>
+          <span id="breadcrumb-number">ARTICLE --</span>
+        </nav>
+
+        <header class="article-heading">
+          <p class="article-kicker">ARTICLE RECORD / 文章档案</p>
+          <div class="article-ghost-number" id="article-ghost-number" aria-hidden="true">--</div>
+          <h1 id="article-title">正在读取文章……</h1>
+          <p class="article-byline" id="article-byline">BRIGHTomorrow / VOL.01</p>
+        </header>
+
+        <dl class="mobile-record" id="mobile-record" aria-label="文章资料"></dl>
+
+        <div class="article-body" id="article-body">
+          <p class="loading-copy">LOADING RECORD……</p>
+        </div>
+
+        <footer class="article-end">
+          <span>END OF RECORD</span>
+          <span id="end-record">BT—01/--</span>
+        </footer>
+
+        <nav class="article-pagination" aria-label="文章翻页">
+          <a id="previous-article" href="index.html#articles"><small>PREVIOUS / 上一篇</small><strong>返回目录</strong></a>
+          <a id="next-article" href="index.html#articles"><small>NEXT / 下一篇</small><strong>返回目录</strong></a>
+        </nav>
+      </article>
+
+      <aside class="archive-infobox" aria-label="文章资料卡">
+        <section class="record-card">
+          <header>
+            <span>BRIGHTomorrow</span>
+            <b id="record-number">--</b>
+          </header>
+          <div class="record-glitch" aria-hidden="true"><i></i><i></i><i></i><span id="record-watermark">--</span></div>
+          <dl id="article-record"></dl>
+        </section>
+
+        <section class="side-module legend-module">
+          <h2>档案图例</h2>
+          <p><span class="legend-swatch swatch-red"></span>编辑标记</p>
+          <p><span class="legend-swatch swatch-blue"></span>内部链接</p>
+          <p><span class="legend-swatch swatch-yellow"></span>当前条目</p>
+        </section>
+
+        <a class="return-poster" href="index.html">返回故障封面 <span>↗</span></a>
+      </aside>
+    </main>
+
+    <footer class="archive-footer">
+      <span>BRIGHTomorrow / INDEPENDENT CHINESE ZINE</span>
+      <a href="index.html#top">BACK TO INDEX ↑</a>
+    </footer>
+
+    <script src="markdown.js" defer></script>
+    <script src="article.js" defer></script>
+  </body>
+</html>
